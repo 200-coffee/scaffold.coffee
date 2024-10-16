@@ -1,0 +1,75 @@
+{
+  "env": {
+    "browser": false,
+    "es2020": false,
+    "node": true,
+    "jest": true,
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+  ],
+  "plugins": ["@typescript-eslint", "prettier", "import"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false,
+    },
+  },
+  "overrides": [
+    {
+      "files": ["src/*.ts"],
+    },
+  ],
+  "ignorePatterns": ["node_modules/", "dist/", "build/"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "proseWrap": "always",
+        "endOfLine": "auto",
+        "tabWidth": 2,
+      },
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "no-debugger": "error",
+    "no-console": ["warn", { "allow": ["warn", "error", "debug"] }],
+    "no-warning-comments": [
+      "warn",
+      { "terms": ["todo", "fixme", "xxx"], "location": "anywhere" },
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+      },
+    ],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true,
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "always",
+      },
+    ],
+  },
+}
