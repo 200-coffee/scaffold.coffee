@@ -15,7 +15,7 @@ Scaffold.Coffee is a simple, easy-to-use tool for scaffolding out new projects.
     <img src="https://img.shields.io/github/actions/workflow/status/200-coffee/scaffold.coffee/default.yml" alt="CI Status" />
   </a>
   <a href="https://github.com/200-coffee/scaffold.coffee/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@200.coffee/scaffold-coffee" alt="License" />
+    <img src="https://img.shields.io/npm/l/scaffold-coffee" alt="License" />
   </a>
 </p>
 

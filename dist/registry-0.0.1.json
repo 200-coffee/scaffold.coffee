@@ -1,0 +1,49 @@
+{
+  "frameworks": [
+    {
+      "name": "nextjs",
+      "label": "Next.js",
+      "version": "14^",
+      "languages": [
+        {
+          "name": "typescript",
+          "label": "TypeScript"
+        },
+        {
+          "name": "javascript",
+          "label": "JavaScript"
+        }
+      ]
+    }
+  ],
+  "styling": [
+    {
+      "name": "css",
+      "label": "Plain CSS"
+    },
+    {
+      "name": "scss",
+      "label": "Plain SCSS"
+    },
+    {
+      "name": "tailwindcss",
+      "label": "Tailwind CSS"
+    }
+  ],
+  "testing": [
+    {
+      "name": "vitest",
+      "label": "Vitest"
+    },
+    {
+      "name": "none",
+      "label": "None"
+    }
+  ],
+  "ui": [
+    {
+      "name": "shadcn-ui",
+      "label": "Shadcn UI"
+    }
+  ]
+}
