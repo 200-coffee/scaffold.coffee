@@ -18,11 +18,6 @@ jobs:
           node-version: "14"
           registry-url: "https://registry.npmjs.org/"
 
-      - name: Update package.json version
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/v}
-          jq --arg version "$VERSION" '.version = $version' package.json > tmp.json && mv tmp.json package.json
-
       - name: Install dependencies
         run: npm install
 
