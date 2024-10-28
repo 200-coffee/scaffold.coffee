@@ -1,5 +1,6 @@
 {
-  "name": "scaffold.coffee",
+  "name": "scaffold-coffee",
+  "displayName": "Scaffold.coffee",
   "version": "0.0.1",
   "description": "A simple scaffolding CLI for generating your next project",
   "private": false,
@@ -15,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/200-coffee/scaffold.coffee"
+  },
+  "bugs": {
+    "url": "https://github.com/200-coffee/scaffold.coffee/issues"
   },
   "files": [
     "dist"
